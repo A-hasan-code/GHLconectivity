@@ -22,10 +22,10 @@ Settings.init({
         type: DataTypes.TEXT,
         allowNull: true,
     },
-    // type: {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    // },
+    type: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
     created_at: {
         type: DataTypes.DATE,
         allowNull: true,
