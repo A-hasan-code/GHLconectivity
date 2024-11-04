@@ -19,11 +19,16 @@ exports.isAuthentication = async (req, res, next) => {
         })
     }
 }
-exports.isAdmin = (user_type) => {
+exports.isAdmin = (user_types) => {
     return (req, res, next) => {
-        if (req.user && req.user.user_type === user_type) {
+        console.log("User Type:", req.user.user_type, "Expected Types:", user_types);
+
+        if (user_types.includes(req.user.user_type)) {
+            console.log("Access granted for user type:", req.user.user_type);
             return next();
         }
+
+        console.log("Access denied for user type:", req.user.user_type);
         return res.status(403).json({ success: false, message: "Forbidden" });
     };
 }
