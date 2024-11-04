@@ -1,0 +1,14 @@
+{
+    "database": {
+        "host": "localhost",
+        "username": "root",
+        "password": "",
+        "database": "zplus",
+        "dialect": "mysql"
+    },
+    "ghl": {
+        "baseUrl": "https://marketplace.gohighlevel.com",
+        "clientId": "6660952266e51fc29dea9308-m2xx33ty",
+        "clientSecret": "4769fb47-bed7-4df2-934e-cb2f663612fa"
+    }
+}
